@@ -14,7 +14,7 @@ export default function Home() {
   const [messages, setMessages] = useState<Message[]>([
     {
       role: "assistant",
-      content: "Hello! I am your **iAmX AI Assistant**. I can help you with information from your documents (Store.pdf and iAmX.pdf). How can I assist you today?",
+      content: "Hello! I am your **iAmX product support agent**. I can help you with information from your official product documents. How can I assist you today?",
     },
   ]);
   const [input, setInput] = useState("");
@@ -88,10 +88,10 @@ export default function Home() {
           style={{ width: "80px", height: "auto", marginBottom: "1rem" }}
         />
         <h1 style={{ fontSize: "2.5rem", fontWeight: 700, letterSpacing: "-1px", background: "linear-gradient(to right, #fff, #3b82f6)", WebkitBackgroundClip: "text", WebkitTextFillColor: "transparent" }}>
-          iAmX Chatbot
+          iAmX product support agent
         </h1>
         <p style={{ color: "rgba(255,255,255,0.5)", marginTop: "0.5rem" }}>
-          RAG-powered Intelligence based on your data
+          Intelligence based on your data
         </p>
       </header>
 
@@ -120,7 +120,7 @@ export default function Home() {
                 </div>
                 <div>
                   <div style={{ fontSize: "0.8rem", fontWeight: 600, marginBottom: "0.25rem", opacity: 0.6 }}>
-                    {m.role === "user" ? "You" : "iAmX Assistant"}
+                    {m.role === "user" ? "You" : "iAmX product support agent"}
                   </div>
                   <div className="content">
                     <ReactMarkdown>{m.content}</ReactMarkdown>

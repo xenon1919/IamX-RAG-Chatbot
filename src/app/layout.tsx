@@ -13,8 +13,8 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata: Metadata = {
-  title: "iAmX Assistant",
-  description: "Your official iAmX retail management AI assistant",
+  title: "iAmX product support agent",
+  description: "Your official iAmX product support agent",
 };
 
 export default function RootLayout({
